@@ -7,13 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Welcome page</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Welcome page</li>
-                    </ol>
+                    <h1>Панель управления</h1>
                 </div>
             </div>
         </div>
@@ -25,7 +19,7 @@
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Title</h3>
+                <h3 class="card-title">Приветствие</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
@@ -37,21 +31,16 @@
                 </div>
             </div>
             <div class="card-body">
-                Start creating your amazing application!
+                Добро пожаловать, администратор!
             </div>
             <!-- /.card-body -->
 
-
-            <div class="card-footer">
-                Footer
-            </div>
-            <!-- /.card-footer-->
         </div>
         <!-- /.card -->
 
         <div class="card col-lg-8 col-md-8 col-sm-12">
             <div class="card-header">
-                <h3 class="card-title">Bar chart</h3>
+                <h3 class="card-title">Статистика по публикациям (гистограмма)</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
@@ -66,7 +55,7 @@
                 <div id="container" style="width: 80%;">
                     <canvas id="canvas"></canvas>
                     <button type="button" class="btn btn-primary mt-2" id="download-pdf">
-                        Download PDF
+                        Экспорт в PDF
                     </button>
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
@@ -86,7 +75,7 @@
                             // labels: month,
                             datasets: [
                                 {
-                                    label: 'posts count',
+                                    label: 'количество публикаций',
                                     backgroundColor: '#26b99a',
                                     borderWidth: 1,
                                     data: <?php echo json_encode($data); ?>
@@ -169,7 +158,7 @@
 
         <div class="card col-lg-8 col-md-8 col-sm-12">
             <div class="card-header">
-                <h3 class="card-title">Line chart</h3>
+                <h3 class="card-title">Статистика по публикациям (линейная диаграмма)</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
@@ -184,7 +173,7 @@
                 <div id="container" style="width: 80%;">
                     <canvas id="canvas2"></canvas>
                     <button type="button" class="btn btn-primary mt-2" id="download-pdf2">
-                        Download PDF
+                        Экспорт в PDF
                     </button>
                 </div>
                 <script>
@@ -200,7 +189,7 @@
                             datasets: [
                                 {
                                     borderWidth: 3,
-                                    label: 'posts count',
+                                    label: 'количество публикаций',
                                     backgroundColor: gradient,
                                     data: <?php echo json_encode($data); ?>
                                 }

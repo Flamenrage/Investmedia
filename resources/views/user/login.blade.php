@@ -20,7 +20,7 @@
 ">
 <div class="register-box">
     <div class="register-logo">
-        <b>Login</b>
+        <b>Авторизация</b>
     </div>
 
     <div class="card">
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="input-group mb-3">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" class="form-control" placeholder="Пароль">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -65,16 +65,16 @@
 
                 <div class="text-center">
                     <!-- /.col -->
-                    <button type="submit" class="btn btn-warning btn-block mb-1 ">Login</button>
+                    <button type="submit" class="btn btn-warning btn-block mb-1 ">Войти</button>
                     <!-- /.col -->
                 </div>
             </form>
-                <a href="{{ route('register.create') }}" class="text-center text-gray-dark">I want to become a member (register)</a>
+                <a href="{{ route('register.create') }}" class="text-center text-gray-dark">Я хочу зарегистрироваться</a>
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->
     <div class="mt-1">
-        <a href="{{ route('home') }}" class="text-center text-dark font-weight-bold">Return home <i
+        <a href="{{ route('home') }}" class="text-center text-dark font-weight-bold">Вернуться на главную<i
                 class="fas fa-backward"></i></a>
     </div>
 </div>

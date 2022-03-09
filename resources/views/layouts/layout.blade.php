@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Recent Posts</h2>
+                        <h2 class="widget-title">Недавнии статьи</h2>
                         <div class="blog-list-widget">
                             <div class="list-group">
                                 <a href="marketing-single.html"

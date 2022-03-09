@@ -8,12 +8,6 @@
                 <div class="col-sm-6">
                     <h1>Комментарии</h1>
                 </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Blank Page</li>
-                    </ol>
-                </div>
             </div>
         </div><!-- /.container-fluid -->
     </section>
@@ -35,12 +29,12 @@
                                         <thead>
                                         <tr>
                                             <th style="width: 30px">#</th>
-                                            <th>Content</th>
-                                            <th style="width: 30px">User id</th>
-                                            <th>User email</th>
-                                            <th>Post</th>
-                                            <th>Date</th>
-                                            <th style="width: 30px">Actions</th>
+                                            <th>Контент</th>
+                                            <th style="width: 30px">id пользователя</th>
+                                            <th>Email пользователя</th>
+                                            <th>Публикация</th>
+                                            <th>Дата</th>
+                                            <th style="width: 30px">Управление</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -86,14 +80,6 @@
                             @if ($comments->count())
                                 {{ $comments->links() }}
                             @endif
-
-                            {{--<ul class="pagination pagination-sm m-0 float-right">
-                                <li class="page-item"><a class="page-link" href="#">«</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">»</a></li>
-                            </ul>--}}
                         </div>
                     </div>
                     <!-- /.card -->

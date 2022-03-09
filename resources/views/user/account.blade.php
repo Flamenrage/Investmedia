@@ -7,18 +7,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h2>Account of {{ $user->name }}</h2>
+                    <h2>Личный кабинет пользователя: {{ $user->name }}</h2>
                     <div class="mt-3">
                         <a href=" {{route('user.update') }}" class="btn pt-3 mr-3 "
-                           style="background: white !important; color: black !important; text-align:center">Account</a>
+                           style="background: white !important; color: black !important; text-align:center">Аккаунт</a>
                         <a href=" {{route('user.account') }}" class="btn pt-3 "
-                           style="background: white !important; color: darkorange!important; text-align:center">Comments</a>
+                           style="background: white !important; color: darkorange!important; text-align:center">Комментарии</a>
                     </div>
                 </div><!-- end col -->
                 <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Account</li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Главная</a></li>
+                        <li class="breadcrumb-item active">Аккаунт</li>
                     </ol>
                 </div><!-- end col -->
             </div><!-- end row -->

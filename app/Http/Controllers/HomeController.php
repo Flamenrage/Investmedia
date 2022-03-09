@@ -23,6 +23,4 @@ class HomeController extends Controller
         $comments = $post->comments()->orderBy('id', 'desc')->paginate(10);
         return view('posts.show', compact('post', 'comments'));
     }
-
-
 }

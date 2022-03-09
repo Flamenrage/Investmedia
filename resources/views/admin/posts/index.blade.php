@@ -8,12 +8,6 @@
                 <div class="col-sm-6">
                     <h1>Теги</h1>
                 </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Blank Page</li>
-                    </ol>
-                </div>
             </div>
         </div><!-- /.container-fluid -->
     </section>
@@ -56,8 +50,8 @@
                                             <th>Категория</th>
                                             <th>Теги</th>
                                             <th>Дата</th>
-                                            <th style="width: 30px">Comments</th>
-                                            <th>Actions</th>
+                                            <th style="width: 30px">Комментарии</th>
+                                            <th>Управление</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -78,7 +72,7 @@
                                                             {{ $tag->title }};
                                                         @endforeach
                                                     @else
-                                                        there are no tags yet!
+                                                        отсутствие тегов
                                                     @endif
                                                 </td>
                                                 {{-- Аналог, используем метод pluck ля коллекций

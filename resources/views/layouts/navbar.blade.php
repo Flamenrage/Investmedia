@@ -11,31 +11,31 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link" href="{{ route('home') }}">Главная</a>
                     </li>
                     @if(Auth::check())
                         @if(auth()->user()->is_admin)
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.index') }}">Management</a>
+                            <a class="nav-link" href="{{ route('admin.index') }}">Управление</a>
                         </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.account') }}">Account</a>
+                                <a class="nav-link" href="{{ route('user.account') }}">Личный кабинет</a>
                             </li>
                         @endif
-                        <li><a class="nav-link" href="{{ route('login.logout') }}">Leave</a></li>
+                        <li><a class="nav-link" href="{{ route('login.logout') }}">Выйти</a></li>
                         @else
                         </li>
-                        <a class="nav-link" href="{{ route('login') }}">Log in</a>
+                        <a class="nav-link" href="{{ route('login') }}">Войти</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register.create') }}">Register</a>
+                            <a class="nav-link" href="{{ route('register.create') }}">Регистрация</a>
                         </li>
                     @endif
                     <li class="dropdown nav-item">
                         <a class="dropdown-toggle nav-link"
                            style="color: #000000 !important;"
-                           data-toggle="dropdown" href="#">Categories</a>
+                           data-toggle="dropdown" href="#">Категории</a>
                         <ul class="dropdown-menu">
                             @foreach($cats_name as $cat)
                                 <li><a class="nav-link" href="{{ route('categories.single', ['slug' => $cat->slug]) }}">{{ $cat->title }}</a></li>
@@ -44,8 +44,8 @@
                     </li>
                 </ul>
                 <form class="form-inline" method="get" action="{{ route('search') }}">
-                    <input name="s" class="form-control mr-sm-2" type="text" placeholder="How may I help?" required>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input name="s" class="form-control mr-sm-2" type="text" placeholder="Что нужно найти?" required>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
                 </form>
             </div>
         </nav>

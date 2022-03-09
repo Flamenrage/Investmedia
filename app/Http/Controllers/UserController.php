@@ -82,10 +82,16 @@ class UserController extends Controller
     public function account()
     {
         $user = User::query()->where('email', auth()->user()->email)->firstOrFail();
-        $comments = Comment::query()->where('user_id', Auth::id())->paginate(10);
+        $comments = Comment::query()->where('user_id', Auth::id())->paginate(20);
         //позволяет обращаться напрямую к переменной user в шаблоне: $user->name
         //если используем get (получим массив) - придется писать так: $user[0]->name
         return view('user.account')->with('user', $user)->with('comments', $comments);
+    }
+
+    public function getUserList()
+    {
+        $users = User::query()->where('is_admin', 0)->paginate(20);
+        return view('admin.users.index')->with('users', $users);
     }
 
     public function getData()

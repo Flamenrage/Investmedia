@@ -20,7 +20,7 @@
 ">
 <div class="register-box">
     <div class="register-logo">
-        <b>Create account</b>
+        <b>Регистрация</b>
     </div>
 
     <div class="card">
@@ -40,7 +40,7 @@
                 @csrf
 
                 <div class="input-group mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Name" value="{{ old('name') }}">
+                    <input type="text" name="name" class="form-control" placeholder="ФИО" value="{{ old('name') }}">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="input-group mb-3">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" class="form-control" placeholder="Пароль">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -69,7 +69,7 @@
 
                 <div class="input-group mb-3">
                     <input type="password" name="password_confirmation" class="form-control"
-                           placeholder="Retype password">
+                           placeholder="Повторите пароль">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -79,17 +79,17 @@
 
                 <div class="text-center">
                     <!-- /.col -->
-                    <button type="submit" class="btn btn-warning btn-block mb-1">Register</button>
+                    <button type="submit" class="btn btn-warning btn-block mb-1">Регистрация</button>
                     <!-- /.col -->
                 </div>
             </form>
 
-            <a href="{{ route('login') }}" class="text-center text-warning">I already have a membership</a>
+            <a href="{{ route('login') }}" class="text-center text-warning">У меня уже есть аккаунт</a>
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->
     <div class="mt-1">
-        <a href="{{ route('home') }}" class="text-center text-dark font-weight-bold">Return home <i
+        <a href="{{ route('home') }}" class="text-center text-dark font-weight-bold">Вернуться домой<i
                 class="fas fa-backward"></i></a>
     </div>
 </div>

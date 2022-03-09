@@ -33,6 +33,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admi
     Route::get('/posts/sort-categories/{slug}', [\App\Http\Controllers\Admin\PostController::class, 'sortByCategory'])->name('admin.sortByCategory');
     Route::get('/search', [\App\Http\Controllers\Admin\SearchController::class, 'index'])->name('admin.search');
     Route::get('/comments', [\App\Http\Controllers\CommentController::class, 'index'])->name('admin.comments');
+    Route::get('/users', [\App\Http\Controllers\UserController::class, 'getUserList'])->name('admin.users');
 
 
     //https://laravel.com/docs/8.x/controllers#actions-handled-by-resource-controller
