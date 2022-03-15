@@ -33,10 +33,13 @@
             @if($comments->count())
                 <div class="custombox clearfix">
                     <h4 class="small-title"> {{$comments->count()}}
-                        @if($comments->count() == 1)
-                            comment
+                        @if((($comments->count()) % 10) == 1)
+                            комментарий
+                        @elseif($comments->count() % 10 >= 2
+                            && $comments->count() % 10 < 5)
+                            комментария
                         @else
-                            comments
+                            комментариев
                         @endif
                     </h4>
                     <div class="row">
@@ -46,7 +49,7 @@
                                     <div class="media">
                                         <div class="media-body">
                                             <h4 class="media-heading user_name"><a href="{{route('posts.single', ['slug' => $comment->post->slug])}}">Post: {{$comment->post->title}}
-                                                </a><small>{{$comment->getCommentDate()}}</small></h4>
+                                                </a><br><small>{{$comment->getCommentDate()}}</small></h4>
                                             <p>{{$comment->content}}</p>
                                         </div>
                                                 <form
@@ -59,7 +62,7 @@
                                                            value="{{ $comment->post_id }}">
                                                     <button type="submit" class="btn btn-danger btn-sm"
                                                             onclick="return confirm('Подтвердите удаление')">
-                                                        Delete
+                                                        Удалить
                                                     </button>
                                                 </form>
                                     </div>
@@ -69,7 +72,7 @@
                     </div><!-- end row -->
                 </div><!-- end custom-box -->
             @else
-                <h4> There are no your comments yet. Please add a review to our posts. </h4>
+                <h4> Комментарии пока отсутствуют. </h4>
             @endif
             <hr class="invis1">
         </div>

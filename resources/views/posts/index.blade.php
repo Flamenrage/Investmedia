@@ -55,16 +55,7 @@
                     </div>
                     <!-- end media -->
                     <div class="blog-meta big-meta text-center">
-                        <div class="post-sharing">
-                            <ul class="list-inline">
-                                <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span
-                                            class="down-mobile">Share on Facebook</span></a></li>
-                                <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span
-                                            class="down-mobile">Tweet on Twitter</span></a></li>
-                                <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a>
-                                </li>
-                            </ul>
-                        </div><!-- end post-sharing -->
+
                         <h4><a href="{{ route('posts.single', ['slug' => $post->slug]) }}"
                                title="">{{ $post->title }}</a></h4>
                         <p>{!! $post->description !!}</p> {{-- Читаем html теги --}}
@@ -86,14 +77,6 @@
         <div class="col-md-12">
             <nav aria-label="Page navigation">
                 {{$posts->links()}}
-                {{-- <ul class="pagination justify-content-center">
-                     <li class="page-item"><a class="page-link" href="#">1</a></li>
-                     <li class="page-item"><a class="page-link" href="#">2</a></li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                     <li class="page-item">
-                         <a class="page-link" href="#">Next</a>
-                     </li>
-                 </ul>--}}
             </nav>
         </div><!-- end col -->
     </div><!-- end row -->

@@ -4,6 +4,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Comment;
 use App\Models\Post;
 use App\Models\Category;
 use App\Models\Tag;
@@ -133,6 +134,10 @@ class PostController
     {
         $post = Post::query()->find($id);
         if ($post) {
+            $comments = Comment::query()->where('post_id', $id);
+            if ($comments) {
+                $comments->delete();
+            }
             $post->tags()->sync([]); //удаляем связанные данные
             Storage::delete($post->thumbnail);
             $post->delete();

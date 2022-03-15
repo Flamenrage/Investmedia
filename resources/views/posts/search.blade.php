@@ -7,12 +7,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <h2>Search result for: {{ $s }}</h2>
+                <h2>Результат поиска: {{ $s }}</h2>
             </div><!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb-item active">Search</li>
+                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Главная</a></li>
+                    <li class="breadcrumb-item active">Поиск</li>
                 </ol>
             </div><!-- end col -->
         </div><!-- end row -->
@@ -37,17 +37,6 @@
                         </div>
                         <!-- end media -->
                         <div class="blog-meta big-meta text-center">
-                            <div class="post-sharing">
-                                <ul class="list-inline">
-                                    <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span
-                                                class="down-mobile">Share on Facebook</span></a></li>
-                                    <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span
-                                                class="down-mobile">Tweet on Twitter</span></a></li>
-                                    <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a>
-                                    </li>
-                                </ul>
-                            </div><!-- end post-sharing -->
-
                             <h4><a href="{{ route('posts.single', ['slug' => $post->slug]) }}"
                                    title="">{{ $post->title }}</a></h4>
                             {!! $post->description !!}
@@ -61,7 +50,7 @@
                     <hr class="invis">
                 @endforeach
             @else
-                <h4> There are no posts with such name </h4>
+                <h4> Нет публикаций по вашему запросу </h4>
             @endif
         </div>
     </div>
