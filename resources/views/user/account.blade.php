@@ -48,7 +48,7 @@
                                 @foreach($comments as $comment)
                                     <div class="media">
                                         <div class="media-body">
-                                            <h4 class="media-heading user_name"><a href="{{route('posts.single', ['slug' => $comment->post->slug])}}">Post: {{$comment->post->title}}
+                                            <h4 class="media-heading user_name"><a href="{{route('posts.single', ['slug' => $comment->post->slug])}}">{{$comment->post->title}}
                                                 </a><br><small>{{$comment->getCommentDate()}}</small></h4>
                                             <p>{{$comment->content}}</p>
                                         </div>

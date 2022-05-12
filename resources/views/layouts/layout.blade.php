@@ -46,6 +46,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
                         <h2 class="widget-title">Недавнии статьи</h2>
@@ -81,9 +82,9 @@
                                     </div>
                                 </a>
                             </div>
-                        </div><!-- end blog-list -->
-                    </div><!-- end widget -->
-                </div><!-- end col -->
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
@@ -138,9 +139,9 @@
                                     </div>
                                 </a>
                             </div>
-                        </div><!-- end blog-list -->
-                    </div><!-- end widget -->
-                </div><!-- end col -->
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
@@ -155,16 +156,17 @@
                                 <li><a href="#">Entertaintment <span>(11)</span></a></li>
                                 <li><a href="#">Video Tuts <span>(87)</span></a></li>
                             </ul>
-                        </div><!-- end link-widget -->
-                    </div><!-- end widget -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
 
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
                     <br>
-                    <div class="copyright">&copy; Markedia. Design: <a href="http://html.design">HTML Design</a>.</div>
+                    <div class="copyright">&copy; Investmedia for: <a href="http://html.design">Ulstu 2022</a>.</div>
                 </div>
             </div>
         </div><!-- end container -->

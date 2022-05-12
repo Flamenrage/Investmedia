@@ -139,7 +139,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-edit"></i>
                             <p>
-                                Посты
+                                Публикации
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -147,13 +147,13 @@
                             <li class="nav-item">
                                 <a href="{{ route('posts.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Список постов</p>
+                                    <p>Список публикаций</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('posts.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Новый пост</p>
+                                    <p>Новая публикация</p>
                                 </a>
                             </li>
                             <li class="nav-item">

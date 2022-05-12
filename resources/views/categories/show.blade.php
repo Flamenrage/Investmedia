@@ -51,7 +51,7 @@
                 <hr class="invis">
             @endforeach
             @else
-                <h4> There are no posts yet. Please choose another category </h4>
+                <h4> В этой категории пока отсутствуют публикации. </h4>
             @endif
         </div>
     </div>

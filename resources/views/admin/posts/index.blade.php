@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Теги</h1>
+                    <h1>Публикации</h1>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -19,17 +19,17 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Список постов</h3>
+                            <h3 class="card-title">Список публикаций</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Добавить
-                                пост</a>
+                                публикацию</a>
                             <div class="form-group float-right">
                                 <label for="category_id" class="mr-1">Категория </label>
 
                                 <select onchange="window.location.href=this.options[this.selectedIndex].value;">
-                                    <option value="{{route('posts.index')}}">All categories</option>
+                                    <option value="{{route('posts.index')}}">Все категории</option>
                                     @foreach($categories as $cat)
                                         <option value="{{ route('admin.sortByCategory', ['slug' => $cat->slug]) }}"
                                         @if(last(request()->segments()) == $cat->slug)

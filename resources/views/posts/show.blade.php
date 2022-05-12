@@ -36,19 +36,19 @@
         <div class="blog-title-area">
             @if (count($post->tags))
                 <div class="tag-cloud-single">
-                    <span>Tags</span>
+                    <span>Теги</span>
                     @foreach($post->tags as $tag)
                         <small><a href="{{ route('tags.single', ['slug' => $tag->slug]) }}" title="">{{$tag->title}}</a></small>
                     @endforeach
                 </div><!-- end meta -->
             @endif
-            <div class="post-sharing">
+            <!--<div class="post-sharing">
                 <ul class="list-inline">
                     <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-share"></i> <span
                                 class="down-mobile">Share on ...</span></a></li>
                 </ul>
-            </div><!-- end post-sharing -->
-        </div><!-- end title -->
+            </div>-->
+        </div>
 
         <div class="row">
             <div class="col-lg-12">
@@ -93,7 +93,7 @@
                                         <input type="text" name="post_id" hidden
                                                class="form-control" id="post_id"
                                                value="{{ $post->id }}">
-                                        <button type="submit" class="btn btn-danger btn-sm"
+                                        <button type="submit" class="btn btn-danger btn-sm mt-3"
                                                 onclick="return confirm('Подтвердите удаление')">
                                            Удалить
                                         </button>
@@ -101,6 +101,7 @@
                                 @endif
                             @endif
                         </div>
+                        <hr>
                         @endforeach
                     </div>
                 </div><!-- end col -->

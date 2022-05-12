@@ -23,7 +23,7 @@ Route::get('/article/{slug}', [HomeController::class, 'show'])->name('posts.sing
 Route::get('/category/{slug}', [App\Http\Controllers\CategoryController::class, 'show'])->name('categories.single');
 Route::get('/tag/{slug}', [App\Http\Controllers\TagController::class, 'show'])->name('tags.single');
 Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->name('search');
-
+Route::get('/test', [App\Http\Controllers\SearchController::class, 'test']);
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
