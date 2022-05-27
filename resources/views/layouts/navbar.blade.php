@@ -42,6 +42,9 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('converter.index') }}">Конвертер валют</a>
+                    </li>
                 </ul>
                 <form class="form-inline" method="get" action="{{ route('search') }}">
                     <input name="s" class="form-control mr-sm-2" type="text" placeholder="Что нужно найти?" required>

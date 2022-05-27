@@ -50,6 +50,7 @@ mix.scripts([
     'resources/assets/front/js/bootstrap.min.js',
     'resources/assets/front/js/animate.js',
     'resources/assets/front/js/custom.js',
+    'resources/assets/front/js/currencies.js'
 ], 'public/assets/front/js/front.js');
 
 mix.copyDirectory('resources/assets/front/fonts', 'public/assets/front/fonts');
