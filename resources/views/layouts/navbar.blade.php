@@ -13,6 +13,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Главная</a>
                     </li>
+                    <li class="dropdown nav-item">
+                        <a class="dropdown-toggle nav-link"
+                           style="color: #000000 !important;"
+                           data-toggle="dropdown" href="#">Категории</a>
+                        <ul class="dropdown-menu">
+                            @foreach($cats_name as $cat)
+                                <li><a class="nav-link" href="{{ route('categories.single', ['slug' => $cat->slug]) }}">{{ $cat->title }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('converter.index') }}">Конвертер валют</a>
+                    </li>
                     @if(Auth::check())
                         @if(auth()->user()->is_admin)
                         <li class="nav-item">
@@ -32,19 +45,6 @@
                             <a class="nav-link" href="{{ route('register.create') }}">Регистрация</a>
                         </li>
                     @endif
-                    <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link"
-                           style="color: #000000 !important;"
-                           data-toggle="dropdown" href="#">Категории</a>
-                        <ul class="dropdown-menu">
-                            @foreach($cats_name as $cat)
-                                <li><a class="nav-link" href="{{ route('categories.single', ['slug' => $cat->slug]) }}">{{ $cat->title }}</a></li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('converter.index') }}">Конвертер валют</a>
-                    </li>
                 </ul>
                 <form class="form-inline" method="get" action="{{ route('search') }}">
                     <input name="s" class="form-control mr-sm-2" type="text" placeholder="Что нужно найти?" required>
