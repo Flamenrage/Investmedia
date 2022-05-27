@@ -42,6 +42,28 @@ p,
     font-family: 'Roboto', serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #ffaf3d;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #776e6e;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a09393;
+}
+
 h1,
 h2,
 h3,
