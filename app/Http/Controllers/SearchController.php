@@ -12,11 +12,6 @@ class SearchController extends Controller
     {
         $s = $request->s;
         $posts = Post::like($s)->orderBy('id', 'desc')->with('category')->paginate(3);
-        // %% - ищем по вхождению букв в строке
         return view('posts.search', compact('posts', 's'));
-    }
-
-    public function test() {
-        return Category::query()->get();
     }
 }

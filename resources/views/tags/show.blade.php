@@ -1,6 +1,6 @@
 @extends('layouts.category_layout')
 
-@section('title', 'Markedia - Marketing Blog Template :: ' . $tag->title)
+@section('title', 'Investmedia - ' . $tag->title)
 
 @section('page-title')
     <div class="page-title db">

@@ -1,6 +1,6 @@
 @extends('layouts.category_layout')
 
-@section('title', 'Blog ' . $user->name)
+@section('title', 'Пользователь - ' . $user->name)
 
 @section('page-title')
     <script src="https://api-maps.yandex.ru/2.1?apikey=1389bb49-9aa2-41c1-aa93-27f43be7b6fa&lang=ru_RU" type="text/javascript"></script>

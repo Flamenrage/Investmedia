@@ -32,7 +32,7 @@ class PostController
     {
         $categories = Category::all(); //value, key
         $category = Category::query()->where('slug', $name)->firstOrFail(); //если не найдет - ошибка 404
-        $posts = $category->posts()->orderBy('id', 'desc')->paginate(10);
+        $posts = $category->posts()->withCount('comments')->orderBy('comments_count', 'desc')->paginate(10);
         return view('admin.posts.index',compact('posts', 'categories'));
     }
 

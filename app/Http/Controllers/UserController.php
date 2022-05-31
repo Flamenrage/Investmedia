@@ -32,11 +32,6 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password), //хэшируем пароль или bcrypt('что-то там');
         ]);
-        //После регистрации авторизуем пользователя в системе
-        //Работаем с фасадом Auth либо через helper auth
-        //https://laravel.com/docs/7.x/authentication#other-authentication-methods
-        //https://laravel.com/docs/7.x/helpers#method-auth
-
         session()->flash('success', 'Success registration');
         Auth::login($user);
         return redirect()->home();

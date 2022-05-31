@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 
-@section('title', 'Investmedia - search')
+@section('title', 'Investmedia - поиск')
 
 <div class="page-title db">
     <div class="container">

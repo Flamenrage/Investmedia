@@ -39,8 +39,6 @@ class CurrencyRateController extends Controller
         $price = (int)$request->price;
         $from = (string)$request->from;
         $to = (string)$request->to;
-        $course = 0;
-        $res = "";
 
         $currencies = new Currencies();
         $converter = new CurrencyConverter($currencies);
@@ -49,16 +47,9 @@ class CurrencyRateController extends Controller
             $currencies->getCurrencyById($from),
             $currencies->getCurrencyById($to)
         );
-        $course = $converter->getConvertedPrice(
-            1,
-            $currencies->getCurrencyById($from),
-            $currencies->getCurrencyById($to)
-        );
-        $res = 'Курс: 1 '.$from.' к 1 '.$to.' равен: '.strval($course);
         return response()->json([
             'status' => self::STATUS_OK,
             'result' => $priceConverted,
-            'res' => $res
         ], self::STATUS_OK);
     }
 }

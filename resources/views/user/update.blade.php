@@ -1,6 +1,6 @@
 @extends('layouts.category_layout')
 
-@section('title', 'Blog ' . $user->name)
+@section('title', 'Пользователь - ' . $user->name)
 
 @section('page-title')
     <div class="page-title db">

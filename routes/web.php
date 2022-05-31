@@ -26,8 +26,6 @@ Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->
 Route::get('/convert', [App\Http\Controllers\CurrencyRateController::class, 'index'])->name('converter.index');
 Route::post('/convert', [App\Http\Controllers\CurrencyRateController::class, 'convert'])->name('converter.convert');
 
-Route::get('/test', [App\Http\Controllers\SearchController::class, 'test']);
-
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
     Route::resource('categories', '\App\Http\Controllers\Admin\CategoryController'); //отвечает на /create, /edit, /update и тд

@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 
-@section('title', 'Investmedia - currency converter')
+@section('title', 'Investmedia - конвертер валют')
 
 <div class="page-title db">
     <div class="container">

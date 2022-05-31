@@ -15,7 +15,6 @@ class Comment extends Model
         $formatter = new \IntlDateFormatter('ru-RU', \IntlDateFormatter::FULL, \IntlDateFormatter::FULL);
         $formatter->setPattern('d MMM y');
         return $formatter->format(new \DateTime($this->created_at));
-        //return \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $this->created_at)->format('d F, Y. H:i');
     }
 
     public function user(){ // Post(comment1, comment2, ....)

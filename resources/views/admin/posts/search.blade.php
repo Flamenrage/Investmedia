@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Теги</h1>
+                    <h1>Публикации</h1>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -19,7 +19,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Список постов</h3>
+                            <h3 class="card-title">Список публикаций</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -27,7 +27,7 @@
                                 пост</a>
                             <br>
                             <div class="form-group float-right">
-                                <label for="category_id" class="mr-1">Search by query:  {{ $s }}, {{$posts->count()}} res. found</label>
+                                <label for="category_id" class="mr-1">Поиск по запросу:  {{ $s }}, {{$posts->count()}} рез. найдено</label>
                                 <br>
                             </div>
 

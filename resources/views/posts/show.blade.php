@@ -1,14 +1,14 @@
 @extends('layouts.layout')
 
 
-@section('title', 'Article - ' . $post->title)
+@section('title', 'Публикация - ' . $post->title)
 
 
 @section('content')
     <div class="page-wrapper">
         <div class="blog-title-area">
             <ol class="breadcrumb hidden-xs-down">
-                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Главная</a></li>
                 <li class="breadcrumb-item"><a
                         href="{{ route('categories.single', ['slug' => $post->category->slug]) }}">{{ $post->category->title }}</a>
                 </li>

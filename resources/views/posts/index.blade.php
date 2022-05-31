@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 
-@section('title', 'Investmedia - Home')
+@section('title', 'Investmedia - главная')
 
 @section('header')
     <section id="cta" class="section">
