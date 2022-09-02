@@ -87,3 +87,6 @@ Backend:
 
 ![](https://sun9-30.userapi.com/impg/zYa9HPPo_uXymb8uqsrbUu5aIva2U-KrwTZcsw/A9VY8l4aVcg.jpg?size=1521x739&quality=96&sign=d908ed247f4320bde0302607e5a92b05&type=album)
 
+## Вопросы
+
+В случае возникновения вопросов по проекту писать в тг: [@flamenrage](https://t.me/flamenrage)
